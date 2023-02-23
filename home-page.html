@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+	<head> 
+		<title>Lab Work - 3 </title>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body bgcolor="#fff">
+		<br><br><br>
+	
+		<div id="banner" name="banner">
+			<h1 align="center">Restaurant<img class="icon" align="center" src="imgs/plateAndFork.jpg"></h1>
+			<img class="notification" id="notification" src="imgs/red-dot.png">
+			<a href="cart.html"><img class="icon" align="right" src="imgs/cart.jpg"></a>
+		</div>
+		
+		<br>
+		<br>
+		
+		<ul>
+			<li class="menu-item"><a href="#" class="drp">Menu Item 1 </a>
+			<div class="menu-content">
+				<a href="#" onclick="display('0')">Sub Menu 1</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 2</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 3</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 4</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 5</a><br>
+			</div>
+			</li>
+			
+			
+			<li class="menu-item"><a href="#" class="drp">Menu Item 2 </a>	
+			<div class="menu-content">
+				<a href="#" onclick="display('0')">Sub Menu 1</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 2</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 3</a><br>
+				<a href="#" onclick="display('0')">Sub Menu 4</a><br>
+				<a href="#" onclick="display('catalogue')">Products</a><br>
+			</div>
+			</li>
+		</ul>
+		
+		<table class="catalogue">
+			<tr>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('1')" src="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('2')" src="imgs/pizza.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('3')" src="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('4')" src="imgs/pizza.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('5')" src="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg"></td>
+			</tr>
+			<tr>
+				<td>
+					<p id="product-desc-1" class="catalogue-desc">
+						Tasty Spaghetti with Meat Sauce<br>
+						Price: $11.99<br>
+						Rating: 4.5/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-2" class="catalogue-desc">
+						Hot Mushroom and Pepperoni Pizza<br>
+						Price: $9.99<br>
+						Rating: 4.75/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-3" class="catalogue-desc">
+						Tasty Spaghetti with Meat Sauce<br>
+						Price: $11.99<br>
+						Rating: 4.5/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-4" class="catalogue-desc">
+						Hot Mushroom and Pepperoni Pizza<br>
+						Price: $9.99<br>
+						Rating: 4.75/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-5" class="catalogue-desc">
+						Tasty Spaghetti with Meat Sauce<br>
+						Price: $11.99<br>
+						Rating: 4.5/5 stars
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('1')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('2')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('3')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('4')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('5')" value="Add to Cart" /></td>
+			</tr>
+			<tr>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('6')" src="imgs/pizza.jpg"></a></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('7')" src="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('8')" src="imgs/pizza.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('9')" src="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg"></td>
+				<td><img id="product" class="catalogue-item" onclick="display_desc('10')" src="imgs/pizza.jpg"></td>
+			</tr>
+			<tr>
+				<td>
+					<p id="product-desc-6" class="catalogue-desc">
+						Hot Mushroom and Pepperoni Pizza<br>
+						Price: $9.99<br>
+						Rating: 4.75/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-7" class="catalogue-desc">
+						Tasty Spaghetti with Meat Sauce<br>
+						Price: $11.99<br>
+						Rating: 4.5/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-8" class="catalogue-desc">
+						Hot Mushroom and Pepperoni Pizza<br>
+						Price: $9.99<br>
+						Rating: 4.75/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-9" class="catalogue-desc">
+						Tasty Spaghetti with Meat Sauce<br>
+						Price: $11.99<br>
+						Rating: 4.5/5 stars
+					</p>
+				</td>
+				<td>
+					<p id="product-desc-10" class="catalogue-desc">
+						Hot Mushroom and Pepperoni Pizza<br>
+						Price: $9.99<br>
+						Rating: 4.75/5 stars
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('6')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('7')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('8')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('9')" value="Add to Cart" /></td>
+				<td><input type="button" id="add-to-cart" onclick="add_to_cart('10')" value="Add to Cart" /></td>
+			</tr>
+		</table>
+	</body>
+</html>
